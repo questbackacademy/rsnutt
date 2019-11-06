@@ -1,0 +1,29 @@
+
+.main , .body1{
+    background-color:#315665 !important;
+} 
+
+.logo{
+    justify-content: center; 
+    width: 50%;
+    height: 50%;
+    padding: 3rem;
+}
+#img-container{
+    padding: 0;
+}
+
+.container .title { 
+    color: #ffffff;
+}
+
+.panel :hover{
+    background-color: #e8e6df;
+}
+
+.panel-title :hover{
+    color: #709bb6;
+}
+a:link{
+    text-decoration: none;
+  }

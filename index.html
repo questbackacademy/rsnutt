@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Filip Larsen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>Rating Snippets - Questback Academy</title>
+    <link rel="shortcut icon" href="/" />
+
+    <script src="jquery.js"></script>
+    <script>
+    $(function(){
+      $("#swe").load("./files/nor_rangering_rolf.html");
+      $("#nor").load("./files/nor_rangering_kari.html");
+    });
+    </script>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body class="body1">
+
+    <div class="container" id="img-container">
+          <img class="logo" src="./img/logo.png"/>
+      </div>
+
+    <div class = "container">
+            <h1 class="title">Case study - How to Create a Rating Snippet?</h1>
+            <p class="title">Select a rating snippet in your preferred language below:</p>
+            <div class = "panel-group">
+               <div class = "panel panel-default">
+
+                <!-- Engelsk dropdown -->
+                  <div class = "panel-heading">
+                     <h4 class = "panel-title">
+                        <a  class="link-title" data-toggle = "collapse" href = "#test">English</a>
+                     </h4>
+                  </div>
+                  <div id = "test" class="panel-collapse collapse">
+                     <ul class = "list-group">
+                        <li class = "list-group-item" id="eng"></li>
+                     </ul>
+                  </div>
+
+                  <!-- Norsk dropdown -->
+                  <div class = "panel-heading">
+                        <h4 class = "panel-title">
+                           <a data-toggle = "collapse" href = "#test1">Norsk</a>
+                        </h4>
+                     </div>
+                     <div id = "test1" class="panel-collapse collapse">
+                        <ul class = "list-group">
+                           <li class = "list-group-item" id="nor"></li>
+                        </ul>
+                     </div>
+
+                     <!-- Svensk dropdown -->
+                     <div class = "panel-heading">
+                            <h4 class = "panel-title">
+                               <a data-toggle = "collapse" href = "#test2">Svenska</a>
+                            </h4>
+                         </div>
+                         <div id = "test2" class="panel-collapse collapse">
+                            <ul class = "list-group">
+                               <li class = "list-group-item" id="swe"></li>
+                            </ul>
+                         </div>
+
+                         <!-- Finsk dropdown -->
+                         <div class = "panel-heading">
+                                <h4 class = "panel-title">
+                                   <a data-toggle = "collapse" href = "#test4">Suomi</a>
+                                </h4>
+                             </div>
+                             <div id = "test4" class="panel-collapse collapse">
+                                <ul class = "list-group">
+                                   <li class = "list-group-item" id="fin"></li>
+                                </ul>
+                             </div>
+               </div>
+               
+            </div>
+            <p class = "title - small"> <a href="https://community.questback.com/s/">Take med back to Community</a> </br></p>          
+            <p class = "title - small"> Designed by <a href= "https://www.linkedin.com/in/filipcl/">Fillip Larsen</a> and <a href="https://www.linkedin.com/in/kavlikavli/"> Håkon Kavli</a>, Questback AS </br></p>
+            <p class = "title - small"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+            
+         </div>
+
+  </body>
+</html>
