@@ -12,6 +12,66 @@
 
     <title>Rating Snippets - Questback Academy</title>
     <link rel="shortcut icon" href="/" />
+    
+    <script src="./questback.popup-1.0.1.min.js"></script>
+    <script>
+        questback.popup.create("https://response.questback.com/questback/bqcht78f0l", {
+            title: "Invitation till undersökning", // title of popup, should be set
+            text: "Ønsker du å delta på vår undersökning om tunnelbanan til Barkarby?", // text in popup, should be set
+            autoDisplay: true, // whether or not popup should be shown automatically; popup can be opened programmatically using questback.popup.display()
+            delay: 0.5, // OPTIONAL; delay in seconds before popup starts to be displayed (before animations kick in)
+            displayFraction: 1, // how often a popup should be displayed; value is between 0 and 1, e.g. 0.2 shows the popup 1 in 5 times
+            activePeriodStart: undefined, // defines a date after which the popup will be shown
+            activePeriodEnd: undefined, // defines a date before which the popup will be shown
+            // button configurations
+            buttons: [
+                { // custom button, showcasing type participate
+                    type: "participate",
+                    text: "Ja"
+                },
+                { // custom button, showcasing type decline
+                    type: "decline",
+                    text: "Nej"
+                },
+            ],
+            // dimensions on popup and iframe (if applicable)
+            width: 500, // the width of the popup
+            height: "auto", // the height of the popup
+            left: "50%", // the left offset of the popup
+            top: "50%", // the top offset of the popup
+            display: {
+                type: "tab", // embedded/window/tab/onleave
+                width: 800, // the width of the iframe (used with embedded and window)
+                height: 600 // the height of the iframe (used with embedded and window)
+            },
+            // custom theme configuration
+            theme: {
+                logo: {
+                    url: "https://web2.questback.com/client/app/Style/images/logo@2.png", // url to logo, defaults to undefined
+                    align: "center", // left/center/right
+                    vAlign: "middle" // top/middle/bottom
+                },
+                shadow: true, // displays the shadow below the popup
+                backdrop: false, // enables a backdrop behind the popup
+                buttonAlignment: "center", // left/center/right
+                showAnimation: {
+                    type: "fade-in", // none/custom/fade-in/fade-out/rotate-in/rotate-out/slide-from-left/slide-from-right/slide-from-top/slide-from-bottom/slide-to-left/slide-to-right/slide-to-top/slide-to-bottom/scale-in/scale-out
+                    duration: 500, // the number of milliseconds the animation uses
+                    css: undefined // to be used with custom, insert your css-animation, e.g. "0% {opacity: 0;transform: translateX(11%);} 50%{opacity: 1;} 100% {opacity: 1;transform: translateX(100px);}"
+                },
+                hideAnimation: {
+                    type: "fade-out", // none/custom/fade-in/fade-out/rotate-in/rotate-out/slide-from-left/slide-from-right/slide-from-top/slide-from-bottom/slide-to-left/slide-to-right/slide-to-top/slide-to-bottom/scale-in/scale-out
+                    duration: 500, // the number of milliseconds the animation uses
+                    css: undefined // to be used with custom, insert your css-animation, e.g. "0% {opacity: 0;transform: translateX(11%);} 50%{opacity: 1;} 100% {opacity: 1;transform: translateX(100px);}"
+                },
+            },
+            // cookie configuration
+            disableCookies: false, // whether or not data should be stored on the client; set this to true if you need to test on servers
+            identifier: "qb0", // identifier of survey, by default is qb<number> where number is the number of popups generated
+            cookieName: "questback.popup.qb0", // set the name of the cookie that stores info concerning the popup; default is questback.popup.<identifier>
+            redisplayAfterDays: 365 // number of days before popup is shown once more (stored in cookie)
+        });
+    </script>
 
     <script src="jquery.js"></script>
     <script>
